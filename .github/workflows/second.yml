@@ -8,4 +8,13 @@ jobs:
     steps:
     - run: echo Hello World
     - run: date
+  windows:
+    runs-on: windows-latest
+    steps:
+    - run: date
+  macos:
+    needs: [ubuntu, windows]
+    runs-on: macos-latest
+    steps:
+    - run: date
     
