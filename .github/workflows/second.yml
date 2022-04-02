@@ -1,0 +1,11 @@
+name: Own Workflow
+
+on: push
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo Hello World
+    - run: date
+    
